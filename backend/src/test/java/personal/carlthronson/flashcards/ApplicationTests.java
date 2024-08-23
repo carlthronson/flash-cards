@@ -4,17 +4,17 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import personal.carlthronson.flashcards.repo.CardRepository;
+import personal.carlthronson.flashcards.svc.CardService;
 
 @SpringBootTest
 class ApplicationTests {
 
   @Autowired
-  CardRepository cardRepository;
+  CardService service;
 
   @Test
   void contextLoads() {
-    assert 1 == cardRepository.count();
+    assert 1 == service.findAll().size();
   }
 
 }
