@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-public abstract class DataEntity {
+public abstract class SimpleEntity {
 
   // Every entity needs an id
   @Id
