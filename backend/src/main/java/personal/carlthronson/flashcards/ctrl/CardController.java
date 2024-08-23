@@ -44,6 +44,7 @@ public class CardController {
     cardEntity1.setName(requestBody.getName());
     cardEntity1.setLabel(requestBody.getLabel());
     cardEntity1.setQuestion(requestBody.getQuestion());
+    cardEntity1.setAnswer(requestBody.getAnswer());
     CardEntity cardEntity = cardEntity1;
     cardEntity = service.save(cardEntity);
     return cardEntity;

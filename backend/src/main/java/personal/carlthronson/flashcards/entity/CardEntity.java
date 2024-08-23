@@ -33,4 +33,9 @@ public class CardEntity {
   @Getter
   @Setter
   private String question;
+
+  // Custom field
+  @Getter
+  @Setter
+  private String answer;
 }

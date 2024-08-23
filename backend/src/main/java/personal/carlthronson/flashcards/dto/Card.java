@@ -34,4 +34,8 @@ public class Card {
   @Getter
   @Setter
   private String question;
+
+  @Getter
+  @Setter
+  private String answer;
 }
