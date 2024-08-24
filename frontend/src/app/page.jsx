@@ -38,7 +38,7 @@ export default function Home() {
       });
   }, []); // Empty dependency array
 
-  return <div className={styles.grid}>
+  return <div className={styles.center}>
     {isLoading ? 'Please wait' :
       <FlashcardArray cards={cards} />
     }
